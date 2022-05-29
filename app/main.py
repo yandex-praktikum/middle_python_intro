@@ -11,4 +11,3 @@ def greeting(name: str) -> str:
         str: Текст приветствия
     """
     return 'Привет, {name}'.format(name=name.title())
-
