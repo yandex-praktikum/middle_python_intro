@@ -7,8 +7,8 @@ def Greeting(name: str) -> str:
       Args:
           name: Имя пользователя
 
-      Returns:
+      Retu
           int: Текст приветствия
       """
-      # pprint.pprint(name.lower())
+      pprint.pprint(name.lower())
       return 'Привет, name'
