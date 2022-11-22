@@ -10,4 +10,4 @@ def greeting(name: str) -> str:
     Returns:
          str: Текст приветствия
     """
-    return 'Привет, {0}'.format(name.title())
+    return f'Привет, {name.title()}'
