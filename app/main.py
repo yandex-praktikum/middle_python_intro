@@ -1,14 +1,15 @@
-"""Генератор приветствий."""
-import pprint
+"""Greetings generator."""
 
-def Greeting(name: str) -> str:
-      """Возвращает текст приветствия.
 
-      Args:
-          name: Имя пользователя
+def greeting(name: str) -> str:
+    """Return greeting text. All name parts must be capitalized.
 
-      Returns:
-          int: Текст приветствия
-      """
-      # pprint.pprint(name.lower())
-      return 'Привет, name'
+    Args:
+        name: User's name
+
+    Returns:
+        str: Greeting text
+    """
+    name_parts = name.split(' ')
+    name = ' '.join((part.capitalize() for part in name_parts))
+    return 'Привет, {0}'.format(name)
