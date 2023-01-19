@@ -10,6 +10,5 @@ def greeting(name: str) -> str:
     Returns:
         str: Greeting text
     """
-    name_parts = name.split(' ')
-    name = ' '.join((part.capitalize() for part in name_parts))
+    name = name.title()
     return 'Привет, {0}'.format(name)
