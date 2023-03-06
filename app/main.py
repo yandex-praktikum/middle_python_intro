@@ -11,4 +11,6 @@ def Greeting(name: str) -> str:
           int: Текст приветствия
       """
       # pprint.pprint(name.lower())
-      return 'Привет, name'
+      #name = name.capitalize()
+      return f'Привет, {name}'
+print(1*1)
